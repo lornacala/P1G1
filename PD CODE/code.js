@@ -42,3 +42,54 @@ function mayorAyB() {
         }
     }
 }
+function obtenerDiv() {
+    var A = parseInt(prompt("ingrese A",10))
+    var B = parseInt(prompt("ingrese B",7))
+    var resultado
+    resultado = A / B
+    alert(parseInt(resultado))
+   
+
+}
+function obtenerMod() {
+    var A = parseInt(prompt("ingrese A",10))
+    var B = parseInt(prompt("ingrese B",7))
+    var resultado
+    resultado = A % B
+    alert(parseInt(resultado))
+   
+
+}
+function digitosN() {
+    var N = parseInt(prompt("ingrese N",10))
+    var resp = 0
+    var cantidad = 1
+    while(N != 0){
+        N = parseInt (N / 10)
+        cantidad = cantidad + 1  
+    }
+    alert("digitos:" + cantidad)
+
+}
+function  retornardigitosN() {
+    var N = parseInt(prompt("ingrese N",9478324))
+    var dig = 0
+    while(N != 0){
+        dig = parseInt(N % 10)
+        alert(dig)
+        N = parseInt (N / 10)
+    }
+
+}function  existeDig3enN() {
+    var N = parseInt(prompt("ingrese N",9478324))
+    var dig = 0
+    while(N != 0){
+        dig = parseInt(N % 10)
+        if(dig == 3){
+            alert("existe el dig 3")
+        }
+        N = parseInt (N / 10)
+    }
+
+}
+
