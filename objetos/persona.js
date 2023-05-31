@@ -31,6 +31,16 @@ class Persona{
         this.edad = valor
     }
     //5.- LOS METOS DE LA CLASE
+
+    toString(){
+        return "persona: " + this.GetCarnet()
+        +" "
+        + this.GetNombre()
+        +" "
+        + this.GetEdad()
+    }
+
+
     contarvocales(){
         var cadena = this.GetNombre()
         var longitudCad = cadena.length
